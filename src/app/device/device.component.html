@@ -1,0 +1,21 @@
+<h3>Devices connected :</h3>
+
+<mat-card style="margin:1em;" *ngFor="let device of devicesList">
+  <div>
+    <label> <b> manufacturer </b></label>
+    <p>{{ device.manufacturer }}</p>
+  </div>
+  <div>
+    <label> <b> product </b></label>
+    <p>{{ device.product }}</p>
+  </div>
+  <div>
+    <label> <b> productId </b></label>
+    <p>{{ device.productId }}</p>
+  </div>
+</mat-card>
+<div style="margin-top: 20px">
+  <button mat-raised-button [color]="'primary'" (click)="export()">
+    Export To Desktop
+  </button>
+</div>
