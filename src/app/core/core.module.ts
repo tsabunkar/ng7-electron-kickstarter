@@ -15,8 +15,8 @@ import { HeaderComponent } from './header/header.component';
     NavbarComponent,
     PagenotfoundComponent,
     SideNavbarComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
-  imports: [CommonModule, SharedModule]
+  imports: [CommonModule, SharedModule],
 })
 export class CoreModule {}

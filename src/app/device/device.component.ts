@@ -4,14 +4,14 @@ import { ElectronService } from '../providers/electron.service';
 @Component({
   selector: 'app-device',
   templateUrl: './device.component.html',
-  styleUrls: ['./device.component.scss']
+  styleUrls: ['./device.component.scss'],
 })
 export class DeviceComponent implements OnInit {
   devicesList;
 
   constructor(
     private electronService: ElectronService,
-    private changeDetectorRef: ChangeDetectorRef
+    private changeDetectorRef: ChangeDetectorRef,
   ) {}
 
   ngOnInit() {

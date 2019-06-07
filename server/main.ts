@@ -65,7 +65,6 @@ try {
   app.on('ready', createWindow);
 
   ipcMain.on('triggerToStore', (event, item) => {
-    // console.log(event);
     const hidDevices = new HIDDevices();
     hidDevices.storeListOfDevicesInDesktop(item, app);
   });

@@ -6,7 +6,7 @@ export class HIDDevices {
 
   getAllDevices = () => {
     // !removing the duplicate elements
-    const devices = this.duplicatedevices.filter(
+    return this.duplicatedevices.filter(
       (device, index, self) =>
         index ===
         self.findIndex(
@@ -14,7 +14,6 @@ export class HIDDevices {
             t.productId === device.productId && t.vendorId === device.vendorId,
         ),
     );
-    return devices;
   }
 
   storeListOfDevicesInDesktop = (devices, app) => {
