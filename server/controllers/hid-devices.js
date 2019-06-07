@@ -8,13 +8,12 @@ var HIDDevices = /** @class */ (function () {
         this.duplicatedevices = HID.devices();
         this.getAllDevices = function () {
             // !removing the duplicate elements
-            var devices = _this.duplicatedevices.filter(function (device, index, self) {
+            return _this.duplicatedevices.filter(function (device, index, self) {
                 return index ===
                     self.findIndex(function (t) {
                         return t.productId === device.productId && t.vendorId === device.vendorId;
                     });
             });
-            return devices;
         };
         this.storeListOfDevicesInDesktop = function (devices, app) {
             var desktopPath = app.getPath('desktop');

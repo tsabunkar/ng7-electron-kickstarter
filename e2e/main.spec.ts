@@ -1,4 +1,3 @@
-import { expect, assert } from 'chai';
 import { SpectronClient } from 'spectron';
 
 import commonSetup from './common-setup';
